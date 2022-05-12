@@ -6,9 +6,7 @@ ul, li, a {
   list-style-type: none;
   text-decoration: none;
   margin: 0;
-  &:hover, :link, :active{
-    color:#3F5D45;
-  }
+  color: #3F5D45;
 }
 
 body{
@@ -120,6 +118,10 @@ body{
             padding: 16px 90px;
             background: #EAF0ED;
             font-size: 24px;
+            &:hover{
+              background: #3F5D45;
+              color: #EAF0ED;
+            }
           }
         }
       }
