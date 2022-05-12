@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  &:hover, :link, :active{
+    color:#3F5D45;
+  }
+}
+
+body{
+  font-family: 'PingFang';
+  font-weight: 550;
+  color: #3F5D45;
+  .nav{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .menu{
+      display: flex;
+      justify-content: space-between;
+      li{
+        padding-left: 60px;
+      }
+      :nth-child(4){
+        padding-left: 79px;
+      }
+    }
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    .banner{
+      background-size: contain;
+      width: 940px;
+      height: 496px;
+    }
+  }
+
+
+  .content{
+    display: flex;
+    justify-content: center;
+    .aside-left{
+      margin-top: 5px;
+      margin-right: 5px;
+      padding: 0;
+      .categories-list{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 24px;
+      li{
+        width: 300px;
+        height: 65px;
+        padding: 16px 64px;
+        &:hover {
+            background: #EAF0ED;
+          }
+        }
+        .categories {
+          margin: 0;
+          padding: 16px 64px;
+          background: #3F5D45;
+          color: #EAF0ED;
+        }
+      }
+     }
+    .product-list{
+      width: 620px;
+      display: flex;
+      flex-flow: row wrap;
+      .card{
+        width: 300px;
+        margin: 5px;
+        .card-body{
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          .product-img{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .tag{
+              position: absolute;
+              writing-mode: vertical-lr;
+              letter-spacing: 3px;
+              background: #3F5D45;
+              color: #fff;
+              padding: 10px;
+            }
+            .favorite-icon{
+              position: absolute;
+              align-self: flex-end;
+              top: 15px;
+              right: 15px;
+            }
+          }
+          .card-body-content{
+            display: flex;
+            justify-content: stretch;
+            padding: 0;
+            font-size: 20px;
+            .product-name{
+              width: 173px;
+              border:1px solid #EAF0ED;
+              padding: 14px 0;
+            }
+            .product-price{
+              width: 127px;             
+              border: 1px solid #EAF0ED;
+              padding: 14px 0;
+            }
+          }
+          .add-cart{
+            padding: 16px 90px;
+            background: #EAF0ED;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .pagination{
+      margin-right: 5px;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      color: #3F5D45;
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background: #EAF0ED;
+        text-align: center;
+        color:#3F5D45;
+        &:hover{
+          background: #3F5D45;
+          color:#EAF0ED;
+          .btn{
+            &:hover{
+              color: #EAF0ED;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}
