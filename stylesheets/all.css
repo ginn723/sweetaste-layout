@@ -1,12 +1,13 @@
-* {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-ul, li, a {
+ul, li, a, h1, div {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   text-decoration: none;
-  margin: 0;
   color: #3F5D45;
 }
 
@@ -16,19 +17,26 @@ body {
   color: #3F5D45;
 }
 
-body .nav {
-  margin: 0;
+body .container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+body .container .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
-body .nav .menu {
+body .container .nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,30 +45,31 @@ body .nav .menu {
           justify-content: space-between;
 }
 
-body .nav .menu li {
+body .container .nav .menu li {
   padding-left: 60px;
 }
 
-body .nav .menu :nth-child(4) {
+body .container .nav .menu :nth-child(4) {
   padding-left: 79px;
 }
 
-body .header {
+body .container .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
 }
 
-body .header .banner {
+body .container .header .banner {
   background-size: contain;
   width: 940px;
   height: 496px;
 }
 
-body .content {
+body .container .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,37 +78,41 @@ body .content {
           justify-content: center;
 }
 
-body .content .aside-left {
+body .container .content .aside-left {
   margin-top: 5px;
   margin-right: 5px;
   padding: 0;
 }
 
-body .content .aside-left .categories-list {
+body .container .content .aside-left .categories {
+  margin: 0;
+  padding: 16px 0;
+  background: #3F5D45;
+  color: #EAF0ED;
+  font-size: 24px;
+  text-align: center;
+}
+
+body .container .content .aside-left .categories-list {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 24px;
 }
 
-body .content .aside-left .categories-list li {
+body .container .content .aside-left .categories-list li {
   width: 300px;
   height: 65px;
-  padding: 16px 64px;
+  padding: 16px 0;
+  text-align: center;
+  border: 1px solid #EAF0ED;
 }
 
-body .content .aside-left .categories-list li:hover {
+body .container .content .aside-left .categories-list li:hover {
   background: #EAF0ED;
 }
 
-body .content .aside-left .categories-list .categories {
-  margin: 0;
-  padding: 16px 64px;
-  background: #3F5D45;
-  color: #EAF0ED;
-}
-
-body .content .product-list {
+body .container .content .product-list {
   width: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,12 +123,12 @@ body .content .product-list {
           flex-flow: row wrap;
 }
 
-body .content .product-list .card {
+body .container .content .product-list .card {
   width: 300px;
   margin: 5px;
 }
 
-body .content .product-list .card .card-body {
+body .container .content .product-list .card .card-body {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +139,7 @@ body .content .product-list .card .card-body {
           flex-direction: column;
 }
 
-body .content .product-list .card .card-body .product-img {
+body .container .content .product-list .card .card-body .product-img {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +150,7 @@ body .content .product-list .card .card-body .product-img {
           flex-direction: column;
 }
 
-body .content .product-list .card .card-body .product-img .tag {
+body .container .content .product-list .card .card-body .product-img .tag {
   position: absolute;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -148,7 +161,7 @@ body .content .product-list .card .card-body .product-img .tag {
   padding: 10px;
 }
 
-body .content .product-list .card .card-body .product-img .favorite-icon {
+body .container .content .product-list .card .card-body .product-img .favorite-icon {
   position: absolute;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -156,7 +169,7 @@ body .content .product-list .card .card-body .product-img .favorite-icon {
   right: 15px;
 }
 
-body .content .product-list .card .card-body .card-body-content {
+body .container .content .product-list .card .card-body .card-body-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,31 +180,33 @@ body .content .product-list .card .card-body .card-body-content {
   font-size: 20px;
 }
 
-body .content .product-list .card .card-body .card-body-content .product-name {
+body .container .content .product-list .card .card-body .card-body-content .product-name {
   width: 173px;
   border: 1px solid #EAF0ED;
   padding: 14px 0;
 }
 
-body .content .product-list .card .card-body .card-body-content .product-price {
+body .container .content .product-list .card .card-body .card-body-content .product-price {
   width: 127px;
   border: 1px solid #EAF0ED;
   padding: 14px 0;
 }
 
-body .content .product-list .card .card-body .add-cart {
+body .container .content .product-list .card .card-body .add-cart {
   padding: 16px 90px;
   background: #EAF0ED;
   font-size: 24px;
 }
 
-body .content .product-list .card .card-body .add-cart:hover {
+body .container .content .product-list .card .card-body .add-cart:hover {
   background: #3F5D45;
   color: #EAF0ED;
 }
 
-body .content .pagination {
+body .container .content .pagination {
+  margin-top: 30px;
   margin-right: 5px;
+  margin-bottom: 60px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +224,7 @@ body .content .pagination {
   color: #3F5D45;
 }
 
-body .content .pagination li {
+body .container .content .pagination li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,17 +236,16 @@ body .content .pagination li {
           justify-content: center;
   width: 60px;
   height: 60px;
-  background: #EAF0ED;
+  border: 1px solid #EAF0ED;
   text-align: center;
   color: #3F5D45;
 }
 
-body .content .pagination li:hover {
+body .container .content .pagination li:hover {
   background: #3F5D45;
-  color: #EAF0ED;
 }
 
-body .content .pagination li:hover .btn:hover {
+body .container .content .pagination li:hover a {
   color: #EAF0ED;
 }
 /*# sourceMappingURL=all.css.map */
