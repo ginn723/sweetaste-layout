@@ -8,10 +8,6 @@ ul, li, a, h1, div {
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-<<<<<<< HEAD
-=======
-  margin: 0;
->>>>>>> 9664ecb516f9fbdbf2f3c139490b6863710e6442
   color: #3F5D45;
 }
 
@@ -202,21 +198,13 @@ body .container .content .product-list .card .card-body .add-cart {
   font-size: 24px;
 }
 
-<<<<<<< HEAD
 body .container .content .product-list .card .card-body .add-cart:hover {
-=======
-body .content .product-list .card .card-body .add-cart:hover {
->>>>>>> 9664ecb516f9fbdbf2f3c139490b6863710e6442
   background: #3F5D45;
   color: #EAF0ED;
 }
 
-<<<<<<< HEAD
 body .container .content .pagination {
   margin-top: 30px;
-=======
-body .content .pagination {
->>>>>>> 9664ecb516f9fbdbf2f3c139490b6863710e6442
   margin-right: 5px;
   margin-bottom: 60px;
   padding: 0;
