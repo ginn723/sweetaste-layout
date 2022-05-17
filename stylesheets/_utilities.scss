@@ -7,6 +7,10 @@ ul, li, a, h1, div{
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+<<<<<<< HEAD
+=======
+  margin: 0;
+>>>>>>> 9664ecb516f9fbdbf2f3c139490b6863710e6442
   color: #3F5D45;
 }
 
@@ -133,6 +137,18 @@ body{
                 color: #EAF0ED;
               }
             }
+<<<<<<< HEAD
+=======
+          }
+          .add-cart{
+            padding: 16px 90px;
+            background: #EAF0ED;
+            font-size: 24px;
+            &:hover{
+              background: #3F5D45;
+              color: #EAF0ED;
+            }
+>>>>>>> 9664ecb516f9fbdbf2f3c139490b6863710e6442
           }
         }
       }
