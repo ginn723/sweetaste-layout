@@ -241,6 +241,14 @@ body .container .content .pagination li {
   color: #3F5D45;
 }
 
+body .container .content .pagination li a {
+  padding: 10px;
+}
+
+body .container .content .pagination li a img {
+  padding: 20px;
+}
+
 body .container .content .pagination li:hover {
   background: #3F5D45;
 }

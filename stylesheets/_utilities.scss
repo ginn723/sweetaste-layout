@@ -155,6 +155,12 @@ body{
           border: 1px solid #EAF0ED;
           text-align: center;
           color:#3F5D45;
+          a{
+            padding: 10px;
+            img{
+              padding: 20px;
+            }
+          }
           &:hover{
             background: #3F5D45;
             a{
